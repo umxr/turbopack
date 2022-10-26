@@ -10,7 +10,6 @@ export default function GlobalNav() {
 
   return (
     <div className="space-y-5">
-      <h1 className="text-white">Umar's Turbo Pack</h1>
       {demos.map((demo) => {
         return (
           <div key={demo.name}>
