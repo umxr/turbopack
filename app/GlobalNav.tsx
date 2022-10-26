@@ -2,14 +2,15 @@
 
 import { demos } from '@/lib/demos';
 import clsx from 'clsx';
-import { useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
+import { useSelectedLayoutSegments } from 'next/navigation';
 
 export default function GlobalNav() {
   const [selectedLayoutSegments] = useSelectedLayoutSegments();
 
   return (
     <div className="space-y-5">
+      <h1 className="text-white">Umar's Turbo Pack</h1>
       {demos.map((demo) => {
         return (
           <div key={demo.name}>
